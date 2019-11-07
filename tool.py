@@ -131,8 +131,9 @@ def handle_photo():
             list_info[-1]['arr']['type'].append('image')
     list_info.reverse()  # 翻转
     final_dict = {"list": list_info}
-    with open("../a.txt","w") as fp:
+    with open("../xh747364.github.io/source/photo/data.json","w") as fp:
         json.dump(final_dict, fp)
+    print(final_dict)
 
 def cut_photo():
     """裁剪算法
